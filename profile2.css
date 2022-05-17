@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px;
+}
+#nav{
+    height: 50px;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a:link {
+  color: #999999;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #999999;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+#signout {
+    background-color: teal;
+    color: white;
+    border: black;
+    box-shadow: 5px 5px black;
+    width: 60px;
+    height: 20px;
+    margin-left: 80px;
+}
+#container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+}
+
+#col1, col2 {
+  flex-basis: 50%;
+}
+#profile {
+  margin:20px;
+}
+#profile_header {
+  background-color: teal;
+  height: 60px;
+
+  top: 60px;
+}
+
+#profile_pic {
+  margin: 10px;
+  padding: 10px;
+  height: 70px;
+  left: 50px;
+}
+#profile_body {
+  border-color: silver;
+  border-style: solid;
+  margin: 0 auto;
+  padding: 20px;
+  height: 120px;
+  padding-top: 30px;
+}
+
+.marker, .location{
+  display: inline-flex;
+}
+.marker, .gear {
+  height: 15px;
+}
+
+#education {
+  margin:20px;
+}
+.card_header {
+  background-color: black;
+  padding: 8px;
+  padding-left:20px;
+  color: white;
+}
+
+.body {
+  padding: 5px;
+  border-color: gray;
+  border-style: solid;
+
+}
+
+h2 {
+  font-size: 20px;
+}
+h4 {
+  color: gray;
+}
+h3 {
+  font-size:15px;
+}
+
+#connection_requests {
+  margin: 20px;
+}
+.avatar {
+  height: 40px;
+}
+img {
+  border-radius: 50%;
+}
+.request {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+#two {
+  border-radius: 50%;
+  background-color: gray;
+  color: white;
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  padding: 5px;
+
+}
+
+#fivehundy {
+    border-radius: 50%;
+  background-color: gray;
+  color: white;
+  height: 20px;
+  width: 40px;
+}
+
+.requests {
+  display: flex;
+  justify-content: left;
+}
+.accept_reject {
+  height: 40px;
+  align-self: flex-end;
+}
+
+#connections {
+  margin: 20px;
+}
+
+#more {
+  border-color: gray;
+  border-style: solid;
+  color: blue;
+  padding: 5px;
+}
+
+#more a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+#more a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+#more a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+#more a:active {
+  color: blue;
+  text-decoration: none;
+}

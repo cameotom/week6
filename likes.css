@@ -1,0 +1,13 @@
+
+#container {
+  width: 400px;
+  margin: 0 auto;
+  border: 2px solid #000;
+
+}
+
+.r1 {
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: middle;
+}

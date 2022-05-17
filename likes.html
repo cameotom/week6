@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="likes.css">
+</head>
+<body>
+    <div id="container">
+        <div class="r1">
+            <div><h1>Some User</h1></div>
+            <div id="likes1">3 like(s)</div>
+            <button id="like1" onclick="like1(this)">Like</button>
+        </div>
+        <div class="r2">This is some filler text, it can say anything</div>
+        <div class="r1">
+            <div><h1>Some User</h1></div>
+            <div id="likes2">12 like(s)</div>
+            <button id="like2" onclick="like2(this)">Like</button>
+        </div>
+        <div class="r2">This is some filler text, it can say anything</div>
+         <div class="r1">
+            <div><h1>Some User</h1></div>
+            <div id="likes3">9 like(s)</div>
+            <button id="like3" onclick="like3(this)">Like</button>
+        </div>
+        <div class="r2">This is some filler text, it can say anything</div>
+
+    </div>
+</body>
+
+<script>
+    var likecount1 = 3;
+    var likes1 = document.querySelector("#likes1");
+    function like1(element) {
+        likecount1++;
+        likes1.innerText = likecount1+" likes";
+    }
+     var likecount2 = 12;
+    var likes2 = document.querySelector("#likes2");
+    function like2(element) {
+        likecount2++;
+        likes2.innerText = likecount2+" likes";
+    }
+
+     var likecount3 = 9;
+    var likes3 = document.querySelector("#likes3");
+    function like3(element) {
+        likecount3++;
+        likes3.innerText = likecount3+" likes";
+    }
+</script>
+</html>

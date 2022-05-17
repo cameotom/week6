@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header">
+        <div id="nav">
+            <h1 id="nav-title">DojoWeather</h1>
+            <ul id="nav-links">
+                <li onclick="loading()">
+                    <a class="headerLink" href="#">Burbank</a></li>
+                <li onclick="loading()">
+                    <a class="headerLink" href="#" class="active">Chicago</a></li>
+                <li onclick="loading()">
+                    <a class="headerLink" href="#">Dallas</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="bodyContainer">
+        <div id="rowCity">
+            <h1 id="cityName">San Jose</h1>
+            <form>
+                <label>Show temperature in</label>
+                <select name="tempSelector" onchange="convert(this)">
+                    <option>C</option>
+                    <option>F</option>
+                </select>
+            </form>
+        </div>
+        <div id="rowDays">
+            <div class="temperatureBox">
+                <h1>Today</h1>
+                <img class="weatherImage" src="imgs/some_rain.png" alt="">
+                <p class="weatherDescription">some rain</p>
+                <div>
+                    <span class="high" id="temperature1">24</span>
+                    <span class="low" id="temperature2">18</span>
+                </div>
+            </div>
+            <div class="temperatureBox">
+                <h1>Tomorrow</h1>
+                <img class="weatherImage" src="imgs/some_sun.png" alt="">
+                <p class="weatherDescription">some sun</p>
+                <div>
+                    <span class="high" id="temperature3">27</span>
+                    <span class="low" id="temperature4">19</span>
+                </div>
+            </div>
+            <div class="temperatureBox">
+                <h1>+2 Days</h1>
+                <img class="weatherImage" src="imgs/some_clouds.png" alt="">
+                <p class="weatherDescription">some clouds</p>
+                <div>
+                    <span class="high" id="temperature5">21</span>
+                    <span class="low" id="temperature6">16</span>
+                </div>
+            </div>
+            <div class="temperatureBox">
+                <h1>+3 Days</h1>
+                <img class="weatherImage" src="imgs/some_sun.png" alt="">
+                <p class="weatherDescription">some sun</p>
+                <div>
+                    <span class="high" id="temperature7">26</span>
+                    <span class="low" id="temperature8">21</span>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="cookies">
+                <img src="imgs/cookie.png" alt="">
+                <div id="cookieText">
+                    <h3>Stop! Cookie Time</h3>
+                    <p >We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="#" id="readMore">Read more...</a> </p>
+                </div>
+                <button id="acceptButton" onclick="accept()">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
